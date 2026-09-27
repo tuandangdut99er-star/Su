@@ -126,6 +126,7 @@ button:focus-visible {
 .cover {
   display: grid;
   grid-template-columns: minmax(0, 42rem);
+  justify-content: center;
   place-items: center;
 }
 
@@ -313,6 +314,7 @@ h1 {
 .letter-screen {
   display: grid;
   grid-template-columns: minmax(0, 62rem);
+  justify-content: center;
   padding-block: clamp(1rem, 4vw, 3rem);
   place-items: center;
 }
@@ -611,7 +613,7 @@ blockquote {
   }
 
   .letter-body {
-    margin: 0;
+    margin: auto 0;
     font-size: 1rem;
     line-height: 1.72;
   }
