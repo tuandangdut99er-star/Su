@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#24172f" />
+    <meta
+      name="description"
+      content="Một lá thư nhỏ gửi Su — với tất cả sự trân trọng và biết ơn."
+    />
+    <title>Gửi Su</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="ambient" aria-hidden="true">
+      <span class="glow glow-one"></span>
+      <span class="glow glow-two"></span>
+      <span class="grain"></span>
+      <div class="floating-hearts" id="floating-hearts"></div>
+    </div>
+
+    <main class="experience" id="experience">
+      <section class="screen cover is-active" id="cover" data-page="cover" aria-labelledby="cover-title">
+        <div class="cover-card">
+          <p class="eyebrow">Một lá thư nhỏ</p>
+
+          <div class="heart-wrap" aria-hidden="true">
+            <div class="heart heart-large"></div>
+            <span class="heart-ring"></span>
+          </div>
+
+          <h1 id="cover-title">Gửi Su</h1>
+          <p class="cover-note">Có vài điều anh muốn nói bằng tất cả sự chân thành.</p>
+
+          <div class="sender">
+            <span>Người gửi</span>
+            <strong>Thomas Dang</strong>
+          </div>
+
+          <button class="primary-button" type="button" data-go="letter-1">
+            <span>Mở lá thư</span>
+            <span class="button-arrow" aria-hidden="true">→</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="screen letter-screen" id="letter-1" data-page="letter-1" aria-labelledby="letter-1-title">
+        <article class="letter-card">
+          <header class="letter-header">
+            <div>
+              <p class="eyebrow">Lá thư gửi Su</p>
+              <h2 id="letter-1-title">Su thân mến,</h2>
+            </div>
+            <span class="page-number" aria-label="Trang 1 trên 4">01 / 04</span>
+          </header>
+
+          <div class="letter-body">
+            <p>Dạo này em khỏe không, cuộc sống, công việc ổn hết chứ. Lâu lắm rồi anh mới làm gì, viết gì đó cho một người.</p>
+            <p>Anh nghĩ có lẽ không quan trọng bây giờ giữa chúng ta là gì, anh chỉ biết những lời anh nói sau là thật lòng và lần cuối nhắn em.</p>
+            <p>Mong em đón nhận trong sự vui vẻ và trân trọng những điều anh ghi như một sự cảm ơn em.</p>
+          </div>
+
+          <footer class="letter-footer">
+            <button class="text-button" type="button" data-go="cover" aria-label="Trở về trang mở đầu">← Mở đầu</button>
+            <nav class="page-dots" aria-label="Chọn trang thư">
+              <button class="dot is-current" type="button" data-go="letter-1" aria-label="Trang 1" aria-current="page"></button>
+              <button class="dot" type="button" data-go="letter-2" aria-label="Trang 2"></button>
+              <button class="dot" type="button" data-go="letter-3" aria-label="Trang 3"></button>
+              <button class="dot" type="button" data-go="letter-4" aria-label="Trang 4"></button>
+            </nav>
+            <button class="next-button" type="button" data-go="letter-2">Trang sau <span aria-hidden="true">→</span></button>
+          </footer>
+        </article>
+      </section>
+
+      <section class="screen letter-screen" id="letter-2" data-page="letter-2" aria-labelledby="letter-2-title">
+        <article class="letter-card">
+          <header class="letter-header">
+            <div>
+              <p class="eyebrow">Những điều anh nhớ</p>
+              <h2 id="letter-2-title">Cảm ơn em đã xuất hiện</h2>
+            </div>
+            <span class="page-number" aria-label="Trang 2 trên 4">02 / 04</span>
+          </header>
+
+          <div class="letter-body">
+            <p>Anh cảm ơn em đã xuất hiện trong cuộc đời anh, thời điểm anh khá nhiều việc đang lo lắng và bất ổn.</p>
+            <p>Không quan tâm và chăm sóc em đúng nghĩa như người yêu. Anh vẫn nhớ người ta khóc vì nhớ anh, vì anh không chịu hứa hay nói lời người ta mong chờ.</p>
+            <p>Anh một phần trêu, một phần sợ bản thân sang đây học có ổn không, để nói những lời yêu làm em mong chờ, nhưng mà những điều em làm, dành cho anh thì anh hiểu hết.</p>
+            <p>Nhiều lúc anh giận bảo em không để ý việc anh làm, chỉ là anh muốn xem người ta thương anh như nào. Anh quá thật, đôi lúc ai cũng vô tri, quên nhiều, kể cả anh.</p>
+            <p>Mà thôi, những chuyện đã qua để nó qua, cố gắng hơn ở phía trước.</p>
+          </div>
+
+          <footer class="letter-footer">
+            <button class="text-button" type="button" data-go="letter-1">← Trang trước</button>
+            <nav class="page-dots" aria-label="Chọn trang thư">
+              <button class="dot" type="button" data-go="letter-1" aria-label="Trang 1"></button>
+              <button class="dot is-current" type="button" data-go="letter-2" aria-label="Trang 2" aria-current="page"></button>
+              <button class="dot" type="button" data-go="letter-3" aria-label="Trang 3"></button>
+              <button class="dot" type="button" data-go="letter-4" aria-label="Trang 4"></button>
+            </nav>
+            <button class="next-button" type="button" data-go="letter-3">Trang sau <span aria-hidden="true">→</span></button>
+          </footer>
+        </article>
+      </section>
+
+      <section class="screen letter-screen" id="letter-3" data-page="letter-3" aria-labelledby="letter-3-title">
+        <article class="letter-card">
+          <header class="letter-header">
+            <div>
+              <p class="eyebrow">Một chút hoài niệm</p>
+              <h2 id="letter-3-title">Điều anh vẫn trân trọng</h2>
+            </div>
+            <span class="page-number" aria-label="Trang 3 trên 4">03 / 04</span>
+          </header>
+
+          <div class="letter-body">
+            <p>Anh không biết cuộc sống bây giờ em thế nào, tốt không, vẫn nở nụ cười đó không, anh cũng chỉ biết quan tâm và xem story em thường xuyên. Chứ không có ý gì xấu với em cả.</p>
+            <p>Anh biết em không theo dõi anh nữa, hay không muốn quan tâm cuộc sống của anh sao, nên có lẽ khi thấy anh xem story, làm em khó chịu.</p>
+            <p>Em đừng giận anh nhiều nữa nha, đừng ghét anh hen. Anh lúc đó đến chỉ muốn yêu thương em, chứ không muốn làm tổn thương.</p>
+            <p>Lúc em thắc mắc, anh thích gì ở Su. Anh vẫn nhớ là anh thích nụ cười dễ thương, cùng khuôn mặt tròn trịa phúc hậu, hay giúp các cô làm từ thiện nữa.</p>
+            <p>Tuy nhiều lúc hơi cục tính với bên ngoài nhưng đó là con người thật của em, mộc mạc và chất. Không cần những lời ngon ngọt mà người ta vẫn yêu quý.</p>
+
+            <blockquote>Đến đây thôi, chỉ là vài lời từ tấm lòng. Sau này cũng mong em gặp được người phù hợp, hiểu và thương em hơn.</blockquote>
+          </div>
+
+          <footer class="letter-footer">
+            <button class="text-button" type="button" data-go="letter-2">← Trang trước</button>
+            <nav class="page-dots" aria-label="Chọn trang thư">
+              <button class="dot" type="button" data-go="letter-1" aria-label="Trang 1"></button>
+              <button class="dot" type="button" data-go="letter-2" aria-label="Trang 2"></button>
+              <button class="dot is-current" type="button" data-go="letter-3" aria-label="Trang 3" aria-current="page"></button>
+              <button class="dot" type="button" data-go="letter-4" aria-label="Trang 4"></button>
+            </nav>
+            <button class="next-button" type="button" data-go="letter-4">Trang cuối <span aria-hidden="true">→</span></button>
+          </footer>
+        </article>
+      </section>
+
+      <section class="screen letter-screen" id="letter-4" data-page="letter-4" aria-labelledby="letter-4-title">
+        <article class="letter-card final-card">
+          <header class="letter-header">
+            <div>
+              <p class="eyebrow">Trang cuối</p>
+              <h2 id="letter-4-title">Lời nhắc nhở</h2>
+            </div>
+            <span class="page-number" aria-label="Trang 4 trên 4">04 / 04</span>
+          </header>
+
+          <div class="letter-body reminders">
+            <p><span class="mini-heart" aria-hidden="true">♥</span>Sắp sang Đông rồi, trời lạnh nhớ mặc ấm, đừng để bị cảm nha.</p>
+            <p><span class="mini-heart" aria-hidden="true">♥</span>Làm việc, nghỉ ngơi và thể thao cho sức khỏe tốt hen.</p>
+            <p><span class="mini-heart" aria-hidden="true">♥</span>Đừng vì ai mà tự làm bản thân bị đau, tổn thương nhé.</p>
+            <p><span class="mini-heart" aria-hidden="true">♥</span>Luôn giữ nụ cười xinh xắn đó nha, điều làm mọi người thích em hơn.</p>
+            <p><span class="mini-heart" aria-hidden="true">♥</span>Chúc em mọi điều bình an trong cuộc sống, hạnh phúc và vui vẻ nhá cô gái.</p>
+
+            <div class="closing">
+              <p>Nếu giận hay ghét anh vì anh không tốt với em, thì hãy cho anh gửi lần tử tế cuối bằng những lời chúc này.</p>
+              <div class="signature">
+                <span>Người từng thương em,</span>
+                <strong>Thomas Dang</strong>
+              </div>
+            </div>
+          </div>
+
+          <footer class="letter-footer">
+            <button class="text-button" type="button" data-go="letter-3">← Trang trước</button>
+            <nav class="page-dots" aria-label="Chọn trang thư">
+              <button class="dot" type="button" data-go="letter-1" aria-label="Trang 1"></button>
+              <button class="dot" type="button" data-go="letter-2" aria-label="Trang 2"></button>
+              <button class="dot" type="button" data-go="letter-3" aria-label="Trang 3"></button>
+              <button class="dot is-current" type="button" data-go="letter-4" aria-label="Trang 4" aria-current="page"></button>
+            </nav>
+            <button class="next-button" type="button" data-go="cover">Đọc lại <span aria-hidden="true">↺</span></button>
+          </footer>
+        </article>
+      </section>
+    </main>
+
+    <noscript>
+      <p class="noscript">Vui lòng bật JavaScript để mở từng trang của lá thư.</p>
+    </noscript>
+    <script src="script.js"></script>
+  </body>
+</html>
